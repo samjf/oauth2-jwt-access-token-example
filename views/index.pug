@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 OAuth2 with JWT Access Token Test Consumer
+  p A simple NodeJS OAuth2 consumer with JWT access tokens made with Passport.js.
+
+  p This is a trivial example, and not made for real world use. 
+  p 
+    | It is made to show how an OAuth access token can contain basic user data without needing further resource calls. 
+    | It also demonstrates the usage of the server using the JWT token for further resource requests from the OAuth server. It does however still use cookies for the ease of user sessions... so maybe a bit counter typical JWT usage.
+  div(style='display:flex;')
+    div(style='width:30%;')
+      p 
+        a(href='/auth/login') Sign in with OAuth2
+      if user
+        p 
+          a(href='/resource') View API resource with JWT
+        p 
+          a(href='/auth/logout') Logout
+    div(style='flex: 1 0;')
+      a(href='/users' target='_blank') Open JSON in new tab
+      iframe(src='/users' name='user_frame' width='100%' height='500px')
