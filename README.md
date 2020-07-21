@@ -2,8 +2,8 @@
 
 A simple NodeJS OAuth2 consumer with JWT access tokens made with Passport.js.
 
-This is a trivial example, and not made for real world use. It is made to show how an OAuth access token
-can contain basic user data without needing further resource calls. It also demonstrates the usage of the server using the JWT token for further resource requests from the OAuth server. It does however still use cookies for the ease of user sessions... so maybe a bit counter typical JWT usage.
+This is a trivial example, and not made for production use. It is made to show how an OAuth access token
+can contain basic user data without needing further resource calls. It also demonstrates the usage of the server using the JWT token for further resource requests from the OAuth server.
 
 See [https://oauth.net/2/jwt-access-tokens/](https://oauth.net/2/jwt-access-tokens/)
 
