@@ -17,7 +17,7 @@
     "node-fetch": "^2.6.1",
     "passport": "^0.4.1",
     "passport-oauth2": "^1.5.0",
-    "pug": "2.0.0-beta11"
+    "pug": "3.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
